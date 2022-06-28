@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shopping.Controllers.SignUpController">
+   <children>
+      <Pane layoutY="32.0" prefHeight="438.0" prefWidth="442.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="-11.0" layoutY="-28.0" prefHeight="490.0" prefWidth="451.0" spacing="20.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Label graphicTextGap="7.0" lineSpacing="200.0" text="Sign Up" textFill="#151928" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+                  <VBox accessibleText="22" alignment="CENTER" prefHeight="295.0" prefWidth="411.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="404.0">
+                           <children>
+                              <TextField fx:id="firstName" prefHeight="30.0" prefWidth="211.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-color: #151928; -fx-border-width: 0px 0px 2px 0px;" />
+                              <TextField fx:id="lastName" alignment="TOP_LEFT" prefHeight="30.0" prefWidth="217.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-color: #151928; -fx-border-width: 0px 0px 2px 2px;" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="66.0" prefHeight="0.0" prefWidth="510.0">
+                           <children>
+                              <Text fx:id="wrongName" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="410.9366784095764" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="404.0">
+                           <children>
+                              <TextField fx:id="username" prefHeight="30.0" prefWidth="411.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #151928; -fx-border-width: 0px 0px 2px 0px;" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="510.0">
+                           <children>
+                              <Text fx:id="userWrong" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="410.9366784095764" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="438.0">
+                           <children>
+                              <PasswordField fx:id="pass1" prefHeight="30.0" prefWidth="414.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #151928; -fx-border-width: 0px 0px 2px 0px;" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="438.0">
+                           <children>
+                              <Text fx:id="wrongpass1" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="410.9366784095764" />
+                           </children></HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="438.0">
+                           <children>
+                              <PasswordField fx:id="pass2" prefHeight="44.0" prefWidth="411.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-color: #151928; -fx-border-width: 0px 0px 2px 0px;" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="438.0">
+                           <children>
+                              <Text fx:id="wrongPass" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="410.9366784095764" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="170.0" prefHeight="35.0" prefWidth="403.0" />
+                        <Button mnemonicParsing="false" onAction="#check" prefHeight="40.0" prefWidth="88.0" style="-fx-background-color: #151928;" text="Sign-up" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="429.0" layoutY="-3.0" prefHeight="504.0" prefWidth="451.0" style="-fx-background-color: #151928;">
+         <children>
+            <ImageView fitHeight="211.0" fitWidth="267.0" layoutX="112.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/onlineshopping_118072.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="141.0" layoutY="245.0" prefHeight="58.0" prefWidth="153.0" text="Already have an account ?" textFill="WHITE" />
+            <Button layoutX="170.0" layoutY="313.0" mnemonicParsing="false" onAction="#openFirstScene" prefHeight="40.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF;" text="Sign-in" />
+            <Label layoutX="139.0" layoutY="466.0" text="© Copyrights reserved 2022" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
