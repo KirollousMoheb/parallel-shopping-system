@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shopping.Controllers.LoginController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="434.0" style="-fx-background-color: #151928;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="76.0" layoutY="214.0" prefHeight="71.0" prefWidth="291.0" text="            Welcome to E-Store &#10;Your SMART world is just a Click away" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="176.0" fitWidth="207.0" layoutX="129.0" layoutY="27.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/retail-e-commerce-computer-icons-marketing-sales-add-to-cart-button-f4ee36333d9e98bd739520b59b6193a3.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="164.0" layoutY="358.0" mnemonicParsing="false" onAction="#openSignupScene" prefHeight="35.0" prefWidth="95.0" style="-fx-background-color: #FFFFFF;" text="Sign-up" textFill="#151928" />
+            <Label layoutX="14.0" layoutY="468.0" text="© Copyrights reserved 2022" textFill="WHITE" />
+            <Label layoutX="119.0" layoutY="290.0" prefHeight="58.0" prefWidth="205.0" text="Don't have an account yet ?&#10;          Just sign up :) " textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="330.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label graphicTextGap="7.0" layoutX="84.0" layoutY="104.0" lineSpacing="200.0" text="Login" textFill="#151928" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userName" layoutX="-15.0" layoutY="261.0" onAction="#loginButtonOnAction" prefHeight="30.0" prefWidth="255.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #151928; -fx-border-width: 0px 0px  2px 0px;" />
+            <PasswordField fx:id="passwordField" layoutX="-15.0" layoutY="304.0" onAction="#loginButtonOnAction" prefHeight="30.0" prefWidth="255.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #151928; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="loginButton" layoutX="77.0" layoutY="353.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="35.0" prefWidth="95.0" style="-fx-background-color: #151928;" text="Log-in" textFill="WHITE" />
+            <Label fx:id="logInMessageLabel" layoutX="-17.0" layoutY="218.0" prefHeight="30.0" prefWidth="267.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
