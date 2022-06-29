@@ -129,7 +129,7 @@
                         </HBox>
                         <ImageView fx:id="ItemImg" fitHeight="170.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../img/1.png" />
+                              <Image url="@../../img/1.jpg" />
                            </image>
                            <VBox.margin>
                               <Insets top="20.0" />

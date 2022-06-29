@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="overviewPane" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shopping.Controllers.adminController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <GridPane minWidth="100.0" prefHeight="560.0" prefWidth="266.0" style="-fx-background-color: #05071F; -fx-border-radius: 10;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane maxWidth="266.0" minHeight="-Infinity" minWidth="266.0" prefHeight="136.0" prefWidth="266.0" style="-fx-border-radius: 10;" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+               <children>
+                  <ImageView fitHeight="112.0" fitWidth="140.0" layoutX="77.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="59.19999999999999" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.39999999999998" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../../img/adminImage.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="adminName112" layoutX="7.0" layoutY="128.0" prefHeight="54.0" prefWidth="256.0" text="Hello," textFill="#e7e5e5" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="3.3999999999999773">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="userBtn" mnemonicParsing="false" onAction="#switchtoUsers" prefHeight="54.0" prefWidth="270.0" stylesheets="@../values/style.css" text="Users" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Monospaced Regular" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="64.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Person_32px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="orderBtn" mnemonicParsing="false" onAction="#switchtoOrders" prefHeight="54.0" prefWidth="274.0" stylesheets="@../values/style.css" text="Order" textAlignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Monospaced Regular" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Open_Envelope_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="productBtn" mnemonicParsing="false" onAction="#switchtoProducts" prefHeight="54.0" prefWidth="273.0" stylesheets="@../values/style.css" text="Products" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Monospaced Regular" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="64.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Box_32px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logout" prefHeight="54.0" prefWidth="263.0" stylesheets="@../values/style.css" text="Log Out" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Monospaced Regular" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="64.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Sign_Out_32px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="overviewBtn" mnemonicParsing="false" onAction="#switchtoOverView" prefHeight="54.0" prefWidth="270.0" style="-fx-text-fill: #e7e5e5;" stylesheets="@../values/style.css" text="Overview" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Monospaced Regular" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="64.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Home_32px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </GridPane>
+      <GridPane fx:id="ssss" layoutX="50.0" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="617.0" style="-fx-background-color: #02030A;" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints fillHeight="false" minHeight="0.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <GridPane fx:id="overviewGrid" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="617.6" prefWidth="774.4" style="-fx-background-color: #02030A;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints fillHeight="false" minHeight="0.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="558.0" prefWidth="774.0">
+                     <children>
+                        <Label layoutX="26.0" layoutY="23.0" prefHeight="54.0" prefWidth="219.0" text="Overview" textFill="#e7e5e5">
+                           <font>
+                              <Font size="43.0" />
+                           </font>
+                        </Label>
+                        <GridPane hgap="20.0" layoutX="40.0" layoutY="148.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" vgap="20.0" AnchorPane.bottomAnchor="86.39999999999998" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="37.60000000000002" AnchorPane.topAnchor="148.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <AnchorPane id="totalUserss" prefHeight="154.0" prefWidth="182.0" stylesheets="@../values/style.css" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label fx:id="totalProducts" alignment="CENTER" layoutX="2.0" layoutY="36.0" prefHeight="47.0" prefWidth="210.0" text="15" textFill="#2a73ff" AnchorPane.bottomAnchor="71.2" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.799999999999983" AnchorPane.topAnchor="36.0">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="12.0" layoutY="53.0" prefHeight="94.0" prefWidth="197.0" stylesheets="@../values/style.css" text="Total Prdoucts" textFill="#e7e5e5" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.799999999999983">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </AnchorPane>
+                              <AnchorPane id="totalUserss" prefHeight="154.0" prefWidth="218.0" stylesheets="@../values/style.css" GridPane.columnIndex="2">
+                                 <children>
+                                    <Label fx:id="totalOrdersLabel" alignment="CENTER" layoutX="14.0" layoutY="36.0" prefHeight="47.0" prefWidth="180.0" text="15" textFill="#2a73ff" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.799999999999983">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="10.0" layoutY="53.0" prefHeight="94.0" prefWidth="190.0" stylesheets="@../values/style.css" text="Total Orders" textFill="#e7e5e5" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.799999999999983">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <padding>
+                                    <Insets left="15.0" />
+                                 </padding>
+                              </AnchorPane>
+                              <AnchorPane id="totalUserss" prefHeight="148.0" prefWidth="190.0" stylesheets="@../values/style.css">
+                                 <children>
+                                    <Label fx:id="totalUsers" alignment="CENTER" layoutX="2.0" layoutY="36.0" prefHeight="47.0" prefWidth="210.0" text="15" textFill="#2a73ff" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.799999999999983">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="16.0" layoutY="53.0" prefHeight="94.0" prefWidth="190.0" stylesheets="@../values/style.css" text="Total Users" textFill="#e7e5e5" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.799999999999983" fx:id="xx">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </AnchorPane>
+                              <AnchorPane id="totalUserss" prefHeight="148.0" prefWidth="193.0" stylesheets="@../values/style.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="12.0" layoutY="36.0" prefHeight="47.0" prefWidth="180.0" text="1000 L.E." textFill="#2a73ff" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.799999999999983">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="Target" alignment="CENTER" layoutX="12.0" layoutY="53.0" prefHeight="94.0" prefWidth="190.0" stylesheets="@../values/style.css" text="Monthly Target" textFill="#e7e5e5" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.799999999999983">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </AnchorPane>
+                              <AnchorPane id="totalUserss" prefHeight="148.0" prefWidth="219.0" stylesheets="@../values/style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label fx:id="totalIncome" alignment="CENTER" layoutX="17.0" layoutY="30.0" prefHeight="47.0" prefWidth="180.0" text="15" textFill="#2a73ff" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.799999999999983">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="17.0" layoutY="54.0" prefHeight="94.0" prefWidth="180.0" stylesheets="@../values/style.css" text="Total Income" textFill="#e7e5e5" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.799999999999983">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <opaqueInsets>
+                                    <Insets left="500.0" />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                              <AnchorPane id="totalUserss" prefHeight="148.0" prefWidth="219.0" stylesheets="@../values/style.css" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label fx:id="totalBalance" alignment="CENTER" layoutX="17.0" layoutY="30.0" prefHeight="47.0" prefWidth="190.0" text="15" textFill="#2a73ff" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.799999999999983">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="17.0" layoutY="54.0" prefHeight="94.0" prefWidth="198.0" stylesheets="@../values/style.css" text="Current Total Balance" textFill="#e7e5e5" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.799999999999983">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <opaqueInsets>
+                                    <Insets left="500.0" />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </GridPane>
+   </children>
+</GridPane>
