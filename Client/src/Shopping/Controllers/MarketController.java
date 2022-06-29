@@ -143,6 +143,8 @@ public class MarketController implements Initializable {
 
             profileWholeDetails.setGlobalData(s.getUsername(),name,balance, orders);
             primaryStage.setScene(new Scene(root,1520, 800));
+            primaryStage.setMaximized(true);
+
 
 
 
@@ -151,46 +153,7 @@ public class MarketController implements Initializable {
     }
     public void goToCart(MouseEvent event) throws IOException {
 
-//        SocketClient socketClient1 = SocketClient.getInstance();
-//        JSONObject json1 = new JSONObject();
-//        String dist1 = "adminProfile";
-//        JSONObject serverResponse1 = socketClient1.socketSendReceiveJSON(json1, dist1);
-//        ArrayList<JSONObject> usersJsonArray = (ArrayList<JSONObject>) serverResponse1.get("ADMIN_DATA");
-//        ArrayList<User> users=new ArrayList<>();
-//        for(int i=0;i<usersJsonArray.size();i++) {
-//
-//            String firstname = String.valueOf(usersJsonArray.get(i).get("firstname"));
-//            String lastname = String.valueOf(usersJsonArray.get(i).get("lastname"));
-//            String balance = String.valueOf(usersJsonArray.get(i).get("Balance"));
-//            String username = String.valueOf(usersJsonArray.get(i).get("username"));
-//            System.out.println(firstname+" "+lastname+" "+balance+" "+username);
-//
-//            ArrayList<JSONObject> ordersJsonArray = (ArrayList<JSONObject>) usersJsonArray.get(i).get("Orders");
-//            ArrayList<Order> orders = new ArrayList<>();
-//            for (int k = 0; k < ordersJsonArray.size(); k++) {
-//                String order_id = (String) ordersJsonArray.get(k).get("order-id");
-//                String total_money = (String) ordersJsonArray.get(k).get("order-total-money");
-//                String number_of_products = (String) ordersJsonArray.get(k).get("order-num-of-products");
-//
-//                ArrayList<JSONObject> orderProductsArray = (ArrayList<JSONObject>) ordersJsonArray.get(k).get("order-products");
-//                ArrayList<Product> products = new ArrayList<>();
-//
-//                for (int j = 0; j < orderProductsArray.size(); j++) {
-//                    String name = (String) orderProductsArray.get(j).get("product-name");
-//                    String quantity = (String) orderProductsArray.get(j).get("product-qty");
-//                    System.out.println(name + " " + quantity);
-//                    Product product = new Product(name, quantity);
-//                    products.add(product);
-//
-//
-//                }
-//
-//                Order order = new Order(order_id, total_money, number_of_products, products);
-//                orders.add(order);
-//
-//            }
-//            User user=new User(username,firstname,lastname,balance,orders);
-//        }
+
 
         Stage primaryStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Signleton s=Signleton.getInstance();
@@ -199,6 +162,8 @@ public class MarketController implements Initializable {
         Parent CartPane = CartPageLoader.load();
         Scene CartScene = new Scene(CartPane, 1520, 720);
         primaryStage.setScene(CartScene);
+        primaryStage.setMaximized(true);
+
     }
     @FXML
     private ComboBox<Integer> itemCount;
@@ -235,104 +200,104 @@ public class MarketController implements Initializable {
         List<Item> items = new ArrayList<>();
         Item item;
         item = new Item();
-        item.setName("IPhone 11");
+        item.setName("OPPO A1");
         item.setPriceString("50");
         item.setPrice(50);
         item.setImgSrc("/img/1.png");
         item.setColor("6A7324");
-        item.setCategory("mobile");
+        item.setCategory("oppo");
         item.setId(1);
         items.add(item);
 ////////////////////////////////////////////
 
         item = new Item();
-        item.setName("IPhone 12");
+        item.setName("OPPO A2");
         item.setPriceString("75");
         item.setId(2);
         item.setPrice(75);
         item.setImgSrc("/img/2.png");
         item.setColor("A7745B");
-        item.setCategory("mobile");
+        item.setCategory("oppo");
         items.add(item);
 //////////////////////////////////////////////
         item = new Item();
-        item.setName("IPhone 13");
+        item.setName("OPPO A13");
         item.setPriceString("100");
         item.setPrice(100);
         item.setId(3);
         item.setImgSrc("/img/3.png");
         item.setColor("F16C31");
-        item.setCategory("mobile");
+        item.setCategory("oppo");
         items.add(item);
 /////////////////////////////////////////////////
         item = new Item();
-        item.setName("IPhone 14");
+        item.setName("OPPO A15");
         item.setPriceString("100");
         item.setPrice(100);
         item.setId(4);
         item.setImgSrc("/img/4.png");
         item.setColor("291D36");
-        item.setCategory("mobile");
+        item.setCategory("oppo");
         items.add(item);
 //////////////////////////////////////////////
         item = new Item();
-        item.setName("IPhone 15");
+        item.setName("OPPO A12");
         item.setPriceString("120");
         item.setPrice(120);
         item.setId(5);
         item.setImgSrc("/img/5.png");
         item.setColor("22371D");
-        item.setCategory("mobile");
+        item.setCategory("oppo");
         items.add(item);
 ////////////////////////////////////////////////
         item = new Item();
-        item.setName("IPhone 16");
+        item.setName("Realme 50i");
         item.setPriceString("150");
         item.setPrice(150);
         item.setId(6);
         item.setImgSrc("/img/6.png");
         item.setColor("FB5D03");
-        item.setCategory("mobile");
+        item.setCategory("realme");
         items.add(item);
 ///////////////////////////////////////////////
         item = new Item();
-        item.setName("IPhone 17");
+        item.setName("Realme 40");
         item.setPriceString("199");
         item.setPrice(199);
         item.setId(7);
         item.setImgSrc("/img/7.png");
         item.setColor("80080C");
-        item.setCategory("mobile");
+        item.setCategory("realme");
         items.add(item);
 /////////////////////////////////////////////////
         item = new Item();
-        item.setName("IPhone 18");
+        item.setName("Realme 30");
         item.setPriceString("200");
         item.setPrice(200);
         item.setId(8);
         item.setImgSrc("/img/8.png");
         item.setColor("FFB605");
-        item.setCategory("laptop");
+        item.setCategory("realme");
         items.add(item);
 //////////////////////////////////////////
         item = new Item();
-        item.setName("IPhone 19");
+        item.setName("Realme 20");
         item.setPriceString("299");
         item.setPrice(299);
         item.setId(9);
         item.setImgSrc("/img/9.png");
         item.setColor("5F060E");
-        item.setCategory("laptop");
+        item.setCategory("realme");
         items.add(item);
 //////////////////////////////////////////////
         item = new Item();
-        item.setName("IPhone 20");
+        item.setName("Realme 10");
         item.setPriceString("399");
         item.setPrice(399);
         item.setId(10);
         item.setImgSrc("/img/10.png");
         item.setColor("E7C00F");
-        item.setCategory("laptop");
+        item.setCategory("realme");
         items.add(item);
 
         return items;
