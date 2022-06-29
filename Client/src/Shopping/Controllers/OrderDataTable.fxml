@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="TotalOrderData" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shopping.Controllers.OrderDataTable">
+   <children>
+      <VBox fx:id="vboxx">
+         <children>
+            <HBox alignment="CENTER_LEFT" minWidth="-Infinity" prefHeight="18.0" prefWidth="1001.0">
+               <children>
+                  <Label prefHeight="60.0" prefWidth="87.0" text="OrderID: ">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="30.0" prefWidth="406.0">
+                     <children>
+                        <Label fx:id="orderId" alignment="TOP_LEFT" layoutX="3.0" layoutY="1.0" prefHeight="30.0" prefWidth="404.0" text="blabla">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label prefHeight="30.0" prefWidth="130.0" text="Total Money:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="30.0" prefWidth="349.0">
+                     <children>
+                        <Label fx:id="totalmoney" alignment="TOP_LEFT" layoutX="2.0" layoutY="2.0" minWidth="-Infinity" prefHeight="30.0" prefWidth="305.0" text="blabla">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox fx:id="hinside" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: #2e3440; -fx-background-radius: 5;">
+               <children>
+                  
+                  <TableView fx:id="table" minHeight="200.0" minWidth="990.0">
+                     <columns>
+                        <TableColumn fx:id="Product_number" editable="false" maxWidth="348.0" minWidth="150.0" prefWidth="330.0" resizable="false" sortable="false" text="Product_number" />
+                        <TableColumn fx:id="Product_name" editable="false" maxWidth="348.0" minWidth="150.0" prefWidth="330.0" resizable="false" sortable="false" text="Product_name" />
+                        <TableColumn fx:id="Quantity" editable="false" maxWidth="348.0" minWidth="150.0" prefWidth="330.0" resizable="false" sortable="false" text="Quantity" />
+                     </columns>
+                  </TableView>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
