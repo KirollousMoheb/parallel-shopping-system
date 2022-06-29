@@ -1,0 +1,27 @@
+.button
+{
+-fx-background-color : #05071F;
+-fx-text-fill : #e7e5e5;
+}
+.button:hover{
+-fx-background-color : #10165F;
+-fx-background-radius: 10;
+}
+
+.button:pressed
+{
+-fx-background-color : #1620A1;
+-fx-background-radius: 10;
+}
+#totalUserss{
+-fx-background-color :  #05071F;
+}
+#totalUserss:hover{
+-fx-background-color :  #10165F;
+-fx-background-radius: 10;
+}
+
+
+.table-view {
+    -fx-background-color: #10165F;
+}
