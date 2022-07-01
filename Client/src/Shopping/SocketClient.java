@@ -12,7 +12,7 @@ public class SocketClient {
     private DataInputStream input = null;
     private DataOutputStream output = null;
     private static SocketClient instance = null;
-    private static final String ADDRESS = "192.168.1.5";
+    private static final String ADDRESS = "192.168.43.139";
 
     private SocketClient(int port)
     {
